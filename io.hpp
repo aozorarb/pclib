@@ -7,12 +7,13 @@
 namespace procon {
   template <class T>
 
-  void puts(const vector<T> &vec) {
+  void puts(const std::vector<T> &vec) {
     size_t size = vec.size();
     if(size == 0) return;
     for(int i=0;i<size;++i) {
-      cout << vec[i] << " \n"[(i == size-1)];
+      std::cout << vec[i] << " \n"[(i == size-1)];
     }
+  }
 }
 
 #endif // IO_HPP
