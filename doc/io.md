@@ -1,5 +1,5 @@
-# io.hpp
-input/outputに関するライブラリ
+# io.cxx
+input/output
 
 ### input_vec(vector<T> &vec, size_t n = 0)
 vectorの配列に入力を代入する。
