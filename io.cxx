@@ -11,7 +11,7 @@ namespace pc {
   void input_vec(vector<T> &vec, size_t n = 0) noexcept {
     assert(vec.size() >= n);
     if (n == -1) n = vec.size();
-    for (int i=0; i<n; ++i) {
+    for (size_t i=0; i<n; ++i) {
       std::cin >> vec[i];
     }
   }
@@ -23,7 +23,7 @@ namespace pc {
     size_t size = vec.size();
   
     std::cout << "{" << vec[0];
-    for (int i=1; i<size; ++i) {
+    for (size_t i=1; i<size; ++i) {
       std::cout << ", " << vec[i];
     }
     std::cout << "}\n";
@@ -34,7 +34,7 @@ namespace pc {
   void output_vec(const vector<T> &vec, const char chr = ' ') noexcept {
     size_t size = vec.size();
   
-    for (int i=0; i<size; ++i) {
+    for (size_t i=0; i<size; ++i) {
       std::cout << vec[i] << chr;
     }
     std::cout << std::endl;
